@@ -34,17 +34,30 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
+        'bg-stretch': 'bgStretch 6s ease-in-out infinite',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
-    },
-  },
-  container: {
-    padding: {
-      DEFAULT: '15px',
+      keyframes: {
+        bgStretch: {
+          '0%, 100%': {
+            backgroundSize: '100% 100%',
+          },
+          '25%': {
+            backgroundSize: '100% 90%',
+          },
+          '50%': {
+            backgroundSize: '90% 100%',
+          },
+          '75%': {
+            backgroundSize: '100% 100%',
+          },
+        },
+      },
     },
   },
   plugins: [require('tailwind-scrollbar')],
 };
+

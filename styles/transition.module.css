@@ -1,28 +1,49 @@
-@keyframes slideMask {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
+.transitionBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
   
-  .transitionBg {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 30;
-    background-color: #2e2257;
-    mask-image: url('/ezgif.com-loop-count.gif');
-    -webkit-mask-image: url('/ezgif.com-loop-count.gif');
-    mask-size: cover;
-    -webkit-mask-size: cover;
-    mask-position: center;
-    -webkit-mask-position: center;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    animation: slideMask 0.6s ease-in-out 0.2s forwards;
+  /* Apply the GIF as a mask */
+  -webkit-mask-image: url('/ezgif.com-loop-count.gif');
+  mask-image: url('/ezgif.com-loop-count.gif');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  /* Set background color (you can choose your own color) */
+  background-color: #000; 
+
+  /* Ensure opacity is initially set to 0 */
+  opacity: 0;
+
+  /* Animation for fade-in and fade-out */
+  animation: fadeIn 4s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-out effect after animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
