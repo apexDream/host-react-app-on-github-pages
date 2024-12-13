@@ -14,7 +14,8 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-grandient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto
+                       xl:ml-20">
           {/* title */}
             <h1 className="h1">
               Transforming Ideas <br/> Into <span className="text-accent">Digital Reality</span>{''}
@@ -41,8 +42,19 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div>image</div>
+      <div className="w-screen h-full absolute right-0 bottom-0">
+       {/* bg image */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full 
+        absolute mix-blend-color-dodge translate-z-0"></div>
+        {/* particles */}
+      <div>Particles</div>
+        {/* avatar img */}
+        <div className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 
+        lg:right-[13%]">
+          <Avatar />
+        </div>
     </div>
+  </div>
     
   )
 };
