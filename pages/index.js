@@ -18,7 +18,7 @@ const Home = () => {
                        xl:ml-20">
           {/* title */}
             <h1 className="h1">
-              Transforming Ideas <br/> Into <span className="text-accent">Digital Reality</span>{''}
+            Eli Anderson <br/> is a <span className="text-accent">Programmer</span>{''}
             </h1>
             {/* subtitle */}
             <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
