@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.Node_Env = 'production'; 
+
 const nextConfig = {
+  basePath: isProd ? '/host-react-app-on-github-pages' : '', 
   reactStrictMode: true,
   swcMinify: true,
   output: 'export',
