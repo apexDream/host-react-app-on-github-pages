@@ -8,6 +8,8 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 import ProjectsBtn from "../components/ProjectsBtn";
 
+// let imageStr = JSON.stringify(Image); 
+// imageStr = imageStr.replaceAll(/\$\{basePath\}/gi, config.basePath);
 
 const Home = () => {
   return(
