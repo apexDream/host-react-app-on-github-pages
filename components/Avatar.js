@@ -2,7 +2,7 @@ const Avatar = () => {
   return (
     <div className="hidden xl:flex xl:max-w-none">
       <img
-        src="/images/WithColor.png" 
+        src="/WithColor.png" 
         alt="With Color"
         width="737"
         height="678"
