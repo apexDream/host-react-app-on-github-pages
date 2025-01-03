@@ -8,13 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@next/font": "^13.4.4",
     "@swc/helpers": "^0.5.15",
     "framer-motion": "^10.12.16",
     "next": "^15.0.3",
+    "next-image-export-optimizer": "^1.18.0",
     "react": "18.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",

@@ -4,7 +4,8 @@ const Avatar = () => {
   return (
     <div className="hidden xl:flex xl:max-w-none">
       <Image 
-        src={'${basePath}./WithColor.png'} 
+      //${basePath}./WithColor.png
+        src={'/WithColor.png'} 
         width={737} 
         height={678} 
         alt='' 
