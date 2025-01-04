@@ -61,6 +61,5 @@ const Home = () => {
   )
 };
 
-console.log(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/WithColor.png`);
 
 export default Home;

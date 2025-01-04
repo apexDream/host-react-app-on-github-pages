@@ -11,7 +11,7 @@ const ProjectsBtn = () => {
                    bg-circleStar bg-cover bg-center bg-no-repeat group animate-bg-stretch"
       >
         <Image
-          src="/rounded-text.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/rounded-text.png`}
           width={141}
           height={148}
           alt="Rounded Text"
