@@ -1,6 +1,10 @@
 import Image from 'next/image';
 
 const Avatar = () => {
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  console.log(`Image Path: ${basePath}/WithColor.png`);
+
   return (
     <div className="hidden xl:flex xl:max-w-none">
       <Image 
