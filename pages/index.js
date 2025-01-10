@@ -19,15 +19,28 @@ const Home = () => {
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto
                        xl:ml-20">
           {/* title */}
-            <h1 className="h1">
+            <motion.h1
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'  
+            className="h1"
+            >
             Eli Anderson <br/> is a <span className="text-accent">Programmer</span>{''}
-            </h1>
+            </motion.h1>
             {/* subtitle */}
-            <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+            <motion.p
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden' 
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Praesentium voluptas ab libero, ipsum accusantium autem, 
               culpa laborum assumenda nemo possimus rem dicta dolorum! 
-              Voluptate officiis amet consequuntur veniam quibusdam quas.</p>
+              Voluptate officiis amet consequuntur veniam quibusdam quas.
+              </motion.p>
               {/* btn */}
               <div className="flex justify-center xl:hidden">
                 <ProjectsBtn />
