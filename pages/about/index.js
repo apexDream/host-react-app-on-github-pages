@@ -107,7 +107,7 @@ const About = () => {
       <Circle />
       {/* Avatar Image */}
       <div
-        className="hidden xl:flex absolute bottom-0 -left-[5px]mix-blend-hard-light"
+        className="hidden xl:flex absolute bottom-0 -left-[5px] mix-blend-hard-light"
       >
         <Avatar  />
       </div>
@@ -167,7 +167,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                   {/* icons */}
                   {item.icons?.map((icon, itemIndex) =>{
-                    return <div className="text-2xl text-white">{icon}</div>
+                    return <div key={itemIndex} className="text-2xl text-white">{icon}</div>
                   })}
                   </div>
                 </div>
