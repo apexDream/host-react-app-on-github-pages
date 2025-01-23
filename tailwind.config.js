@@ -31,6 +31,8 @@ module.exports = {
         circles: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg-circles.png")`,
         circleStar: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/circle-star.svg")`,
         site: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/site-bg.svg")`,
+        scifi: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/scifi.gif")`,
+        scificircle: `url("${process.env.NEXT_PUBLIC_BASE_PATH || ''}/scificircle.gif")`,
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center relative -mt-4">
           <Link href={'/'}>
             <h1 className="h1">
-              <span className="font-bold">Eli Anderson</span><span className="text-accent">.</span> 
+              <span className="font-bold">Eli Anderson</span><span className="text-accent">.</span>  
             </h1>
           </Link>
           <Socials/> 

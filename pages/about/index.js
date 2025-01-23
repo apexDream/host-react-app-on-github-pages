@@ -107,20 +107,24 @@ const About = () => {
       <Circle />
       {/* Avatar Image */}
       <div
-        className="hidden xl:flex absolute bottom-0 -left-[5px] mix-blend-hard-light"
+        className="hidden xl:flex absolute bottom-0 -left-[5%] mix-blend-hard-light"
       >
-        <Avatar  />
+        {/* <Avatar  /> */}
       </div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* title */}
         <div className="flex-1 flex flex-col justifyt-center">
           <h2 className="h2">
-            Header
+            About
           </h2>
           <p className="max-w-[500px] mx-auto ml:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis illum? 
-            Magni animi voluptas reiciendis ab laborum fugiat, maxime nisi odit atque nobis temporibus, 
-            veniam repellendus neque illum ea inventore.
+          Hi, I’m Eli Anderson—an AI Programmer and Game Developer passionate about crafting 
+          innovative gameplay experiences that seamlessly integrate artificial intelligence and design. 
+          With a solid foundation in Python, C#, and C++, and expertise in tools like Unity and Unreal Engine, 
+          I specialize in creating intelligent, immersive systems that elevate player engagement.
+         <b> Professional Journey</b> <br/>
+          I began my career as an AI Programmer at Symbol Zero, where I developed sophisticated NPC behaviors and enhanced UI functionalities to enrich gameplay. Prior to that, my internship at The Common XR allowed me to dive into debugging, performance optimization, and data integration within Unity, sharpening my technical problem-solving skills.
+          While pursuing my Bachelor of Science in Digital Entertainment at Abilene Christian University, I supported budding developers as a Tutor and Teacher Assistant, mentoring students on tools like Unity, Unreal, Blender, and Photoshop. This role solidified my passion for collaborative problem-solving and game development.
           </p>
         <div>
           <div>
